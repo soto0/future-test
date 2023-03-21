@@ -28,15 +28,6 @@
     background-color: rgb(31, 30, 30);
 }
 
-
-.preloader {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    margin: 0 auto;
-    transform:translate(-50%, -20%);
-}
-
 @media screen and (max-width: 1437px) {
     .books__bottom {
         justify-content: center;

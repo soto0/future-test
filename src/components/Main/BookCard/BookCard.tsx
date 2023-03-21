@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC } from 'react';
 import { Link } from 'react-router-dom';
 import s from './BookCard.module.css';
 
@@ -14,7 +14,11 @@ const BookCard: FC<BookCardProps> = (props: BookCardProps) => {
     return (
         <Link to={props.Id} className={s.book}>
             <div className={s.book__top}>
-                <img src={props.Icon} alt="book" className={s.book__icon} />
+                {
+                    props.Icon ?
+                        <img src={props.Icon} alt="book" className={s.book__icon} /> :
+                        <p className="no__image">Нет фото</p>
+                }
             </div>
             <div className={s.book__bottom}>
                 <p className={s.book__category}>{props.Category}</p>

@@ -7,7 +7,7 @@ import { useTypedSelector } from '../../../hooks/useTypedSelector';
 const Books: FC = () => {
     const { Books, Loading, SearchValue } = useTypedSelector(state => state.Books);
     const [moreBooks, setMoreBooks] = useState(4);
-
+    
     const loadMore = () => {
         setMoreBooks(moreBooks + 30);
     };
@@ -23,7 +23,7 @@ const Books: FC = () => {
                 }
             </div>
             <div className={s.books__bottom}>
-                {Loading ? <img src={Preloader} alt="preloader" className={s.preloader} /> : undefined}
+                {Loading ? <img src={Preloader} alt="preloader" className="preloader" /> : undefined}
                 {
                     Books?.slice(0, moreBooks).map((book: any) => {
                         return (

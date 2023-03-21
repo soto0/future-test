@@ -1,0 +1,38 @@
+
+.book__left {
+    width: 30%;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    padding: 8%;
+    max-width: 400px;
+    max-height: 450px;
+    border-radius: 5px;
+}
+
+.book__icon {
+    width: auto;
+}
+
+.book__category {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.book__title {
+    margin-top: 50px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.book__author {
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(110, 110, 110);
+}
+
+.book__description {
+    margin-top: 50px;
+    font-size: 18px;
+    max-width: 800px;
+}

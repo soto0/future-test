@@ -1,0 +1,44 @@
+.books__top {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.books__bottom {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.more {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: rgb(63, 62, 62);
+    color: white;
+    font-weight: 700;
+    transition: all 0.3s;
+    margin-bottom: 50px; 
+}
+
+.more:hover {
+    background-color: rgb(31, 30, 30);
+}
+
+
+.preloader {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin: 0 auto;
+    transform:translate(-50%, -20%);
+}
+
+@media screen and (max-width: 1437px) {
+    .books__bottom {
+        justify-content: center;
+    }
+}

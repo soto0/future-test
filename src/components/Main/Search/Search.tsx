@@ -13,11 +13,15 @@ const Search: FC = () => {
     const { SearchValue, Category } = useTypedSelector(state => state.Books);
 
     const selectCategory = (e: any) => {
-        if (SearchValue === '') {
-            setSelectorsValidate(false);
-        } else {
-            getBooks(SearchValue, sortValue, e.target.innerText);
-            getLoading();
+        try {
+            if (SearchValue === '') {
+                setSelectorsValidate(false);
+            } else {
+                getBooks(SearchValue, sortValue, e.target.innerText);
+                getLoading();
+            }
+        } catch (error) {
+            console.error(error);
         }
     };
 
@@ -30,12 +34,16 @@ const Search: FC = () => {
     };
 
     const onClickSortOption = (e: any) => {
-        if (SearchValue === '') {
-            setSelectorsValidate(false);
-        } else {
-            setSortValue(e.target.innerText);
-            getBooks(SearchValue, e.target.innerText, Category);
-            getLoading();
+        try {
+            if (SearchValue === '') {
+                setSelectorsValidate(false);
+            } else {
+                setSortValue(e.target.innerText);
+                getBooks(SearchValue, e.target.innerText, Category);
+                getLoading();
+            }
+        } catch (error) {
+            console.error(error);
         }
     };
 

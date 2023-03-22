@@ -3,7 +3,9 @@ import Book from '../components/Book/Book';
 
 const BookPage: FC = () => {
     return (
-        <Book />
+        <main>
+            <Book />
+        </main>
     );
 };
 

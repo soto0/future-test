@@ -13,13 +13,11 @@ const Book: FC = () => {
         getBook(bookId);
     }, []);
 
-    console.log(Book);
-
     return (
-        <>
+        <div className={s.book}>
             {
                 Book.length === 0 ?
-                    <img src={Preloader} alt="preloader" className="preloader" /> :
+                    <img src={Preloader} alt="preloader" className="book__preloader preloader" /> :
                     <div className='book__container container'>
                         <div className={s.book__left}>
                            {
@@ -37,7 +35,7 @@ const Book: FC = () => {
                     </div>
 
             }
-        </>
+        </div>
     );
 };
 

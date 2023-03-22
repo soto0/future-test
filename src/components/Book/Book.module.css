@@ -1,6 +1,10 @@
+.book {
+    position: relative;
+    height: 100%;
+}
 
 .book__left {
-    width: 30%;
+    width: 400px;
     text-align: center;
     background-color: rgb(230, 230, 230);
     padding: 8%;
@@ -22,6 +26,7 @@
     margin-top: 50px;
     font-weight: 300;
     font-size: 30px;
+    line-height: 35px;
 }
 
 .book__author {
@@ -35,4 +40,37 @@
     margin-top: 50px;
     font-size: 18px;
     max-width: 800px;
+}
+
+@media screen and (max-width: 1280px) {
+    .book__left {
+        margin: 0 auto;
+    }
+
+    .book__right {
+        text-align: center;
+    }
+
+    .book__description {
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .book__title {
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .book__title {
+        font-size: 22px;
+    }
+
+    .book__left {
+        width: 100%;
+        max-width: 100%;
+    }
 }
